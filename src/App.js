@@ -18,8 +18,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-      I'm Pedro and I study at
-      <span style={{fontWeight: 'bold', color: 'red', marginLeft: '5px'}}>{typeEffect}</span>
+      I'm Pedro and I study at <span style={{fontWeight: 'bold', color: 'red', marginLeft: '5px'}}>{typeEffect}</span>
       </h1>
     
 
