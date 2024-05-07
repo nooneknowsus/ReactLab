@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './styles.css';
 import girlImage from './girl.png';
 import boyImage from './boy.png';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function Contador() {
