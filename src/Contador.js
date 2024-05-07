@@ -45,13 +45,11 @@ function Contador() {
             <h2>TOTAL</h2>
             <p id="total" className="badge badge-light total-number">{total}</p>
             
-            <h2>Homens</h2>
             <p id="homens" className="badge badge-light">{homens}</p>
             <img src={boyImage} className="icones" alt="Homem" />
             <button className="btn btn-success ml-2" onClick={addHomem}>+</button>
             <button className="btn btn-danger ml-1" onClick={removeHomem}>-</button>
             
-            <h2>Mulheres</h2>
             <p id="mulheres" className="badge badge-light">{mulheres}</p>
             <img src={girlImage} className="icones" alt="Mulher" />
             <button className="btn btn-success ml-2" onClick={addMulher}>+</button>
