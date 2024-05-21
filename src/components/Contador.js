@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './styles.css';
-import girlImage from './girl.png';
-import boyImage from './boy.png';
+import '../style.css';
+import girlImage from '../assets/girl.png';
+import boyImage from '../assets/boy.png';
 
 
 function Contador() {

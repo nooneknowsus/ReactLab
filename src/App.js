@@ -1,8 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Letreiro from './Letreiro';
-import Relogio from './Relogio';
-import Contador from './Contador';
+import Letreiro from './components/Letreiro';
+import Relogio from './components/Relogio';
+import Contador from './components/Contador';
+import TableOfContents from './components/TableOfContents';
+import TodoList from './components/TodoList';
+import Profile from './components/Profile';
+import Avatar from './components/Avatar';
+import TerceiraSemana from './components/TerceiraSemana';
+
 import './App.css';
 
 export default function App() {
@@ -25,13 +31,21 @@ export default function App() {
                                 <Link to="/contador">Contador</Link>
                             </div>
                         </div>
+                        <div className="dropdown">
+                            <button className="dropbtn">Terceira Semana</button>
+                            <div className="dropdown-content">
+                                <Link to="/terceirasemana">Components</Link>
+                            </div>
+                        </div>
                     </nav>
+                    
                 </header>
                 <main>
                     <Routes>
                         <Route exact path="/relogio" element={<Relogio />} />
                         <Route exact path="/letreiro" element={<Letreiro />} />
                         <Route exact path="/contador" element={<Contador />} />
+                        <Route exact path="/terceirasemana" element={<TerceiraSemana />} />
                     </Routes>
                 </main>
             </Router>

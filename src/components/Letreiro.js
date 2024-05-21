@@ -1,5 +1,5 @@
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
-import './App.css';
+import '../App.css';
 function Letreiro() {
   const [typeEffect] = useTypewriter({
     words: ['Fatec', 'Presidente Prudente'],
