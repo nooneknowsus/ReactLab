@@ -6,7 +6,7 @@ const initialList = [
   { id: 2, title: 'Terracotta Army' },
 ];
 
-export default function List2() {
+export default function List4() {
   const [list, setList] = useState(initialList);
 
   function handleClick() {
@@ -17,7 +17,6 @@ export default function List2() {
 
   return (
     <>
-    <br />
       <button onClick={handleClick}>
         Reverse
       </button>
