@@ -9,6 +9,7 @@ import Profile from './components/Profile';
 import Avatar from './components/Avatar';
 import TerceiraSemana from './components/TerceiraSemana';
 import QuartaSemana from './components/QuartaSemana';
+import QuintaSemana from './components/QuintaSemana';
 
 import './App.css';
 
@@ -45,7 +46,12 @@ export default function App() {
                             </div>
                         </div>
 
-
+                        <div className="dropdown">
+                            <button className="dropbtn">Quinta Semana</button>
+                            <div className="dropdown-content">
+                                <Link to="/quintasemana">Components</Link>
+                            </div>
+                        </div>
                     </nav>
 
                 </header>
@@ -56,6 +62,7 @@ export default function App() {
                         <Route exact path="/contador" element={<Contador />} />
                         <Route exact path="/terceirasemana" element={<TerceiraSemana />} />
                         <Route exact path="/quartasemana" element={<QuartaSemana />} />
+                        <Route exact path="/quintasemana" element={<QuintaSemana />} />
                     </Routes>
                 </main>
             </Router >
